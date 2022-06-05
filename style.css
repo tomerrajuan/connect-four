@@ -10,6 +10,32 @@ body {
   justify-content: end;
   align-items: center; }
 
+.game-control {
+  display: flex;
+  height: 150px; }
+
+.clock {
+  display: flex; }
+  .clock.on {
+    display: none; }
+
+.time-waisted {
+  justify-content: center;
+  font-size: 35px;
+  width: 150px; }
+
+.time-left {
+  color: #06610c;
+  font-size: 35px;
+  margin-right: 15px; }
+
+.restart-btn {
+  padding: 20px;
+  font-size: 28px;
+  height: 100px;
+  background-color: beige;
+  border-radius: 5px; }
+
 .board {
   display: flex;
   align-self: center;
@@ -66,7 +92,7 @@ body {
 .menu2 {
   z-index: 500;
   position: absolute;
-  background-color: #fffc9f;
+  background-color: beige;
   width: 250px;
   height: 60%;
   top: 30vh;
@@ -87,34 +113,6 @@ body {
 
 .menu2.on {
   visibility: visible; }
-
-.clock {
-  display: flex;
-  width: 300px;
-  border: 1px solid black; }
-  .clock.on {
-    display: none; }
-
-.game-control {
-  position: absolute;
-  display: flex;
-  top: 0; }
-
-.time-waisted {
-  color: #06610c;
-  justify-content: center;
-  font-size: 60px; }
-
-.time-left {
-  color: #06610c;
-  position: fixed;
-  font-size: 40px; }
-
-.restart-btn {
-  height: 150px;
-  width: 300px;
-  font-size: 28px;
-  z-index: 8000; }
 
 .victoryas {
   height: 100%;
