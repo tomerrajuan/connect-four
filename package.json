@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
-  "dependencies": {
-    "node-sass": "^7.0.1"
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass --include-path scss style.scss style.css",
+    "watch": "nodemon -e scss -x 'npm run css'"
   },
   "repository": {
     "type": "git",
