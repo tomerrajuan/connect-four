@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 40px solid rgb(6, 0, 190);
+    box-sizing: content-box;
+    transform: translate(-30px, -30px);
+}
+.board {
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.player1 {
+    background-color: yellow;
+}
+.player2 {
+    background-color: red;
+}
+#name1 {
+    margin-left: 65%;
+    font-size: 65px;
+    margin-top: -5%;
+    color: rgb(6, 97, 12);
+}
+#name2 {
+    margin-left: 20%;
+    font-size: 65px;
+    margin-top: -5%;
+    color: rgb(6, 97, 12);
+}
+#num1 {
+    position: absolute;
+    color: rgb(255, 248, 1);
+    margin-top: -130%;
+    margin-left: 10%;
+    font-size: 175px;
+}
+#num2 {
+    color: red;
+    position: absolute;
+    margin-top: -130%;
+    margin-left: 60%;
+    font-size: 175px;
+}
+#menu1 {
+    z-index: 500;
+    position: absolute;
+    background-color: rgb(255, 252, 159);
+    width: 280px;
+    height: 60%;
+    top: 22%;
+    right: 0;
+    max-width: 300px;
+    padding-top: 20px;
+    overflow: hidden;
+    border: 2px solid rgb(6, 97, 12);
+}
+#menu2 {
+    position: absolute;
+    background-color: rgb(255, 252, 159);
+    width: 280px;
+    height: 60%;
+    top: 22%;
+    left: 0;
+    max-width: 300px;
+    padding-top: 20px;
+    overflow: hidden;
+    visibility: hidden;
+    border: 2px solid rgb(6, 97, 12);
+}
+
+#menu1.on {
+    visibility: hidden;
+}
+
+#menu2.on {
+    visibility: visible;
+}
+
+.clock {
+    display: flex;
+    margin-left: 40%;
+    height: 135px;
+    width: 300px;
+    top: 0;
+    border: 4px solid black;
+    position: fixed;
+    background: rgb(255, 252, 159);
+    justify-content: center;
+}
+#TimeWaisted {
+    color: rgb(6, 97, 12);
+    justify-content: center;
+    margin-top: 15%;
+    font-size: 78px;
+}
+#timeLeft {
+    color: rgb(6, 97, 12);
+    position: fixed;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 0%;
+    font-size: 40px;
+}
+
+.victoryas {
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-image: url("background.jpg");
+    visibility: hidden;
+}
+#button {
+    height: 150px;
+    width: 300px;
+    font-size: 28px;
+    margin-left: 39.5%;
+    margin-top: 24.5%;
+    opacity: 0.9;
+    z-index: 8000;
+    position: fixed;
+}
+
+.victoryas.on {
+    visibility: visible;
+    z-index: 1000;
+}
+.clock.on {
+    visibility: hidden;
+}
+.board.on {
+    position: fixed;
+    z-index: 2000;
+    left: 27%;
+}
+.winningMessage {
+    font-size: 75px;
+    color: rgb(106, 7, 102);
+    left: 2%;
+    position: fixed;
+    z-index: 5000;
+    top: -15%;
+    width: 100%;
+}
