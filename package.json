@@ -1,0 +1,24 @@
+{
+  "name": "connectfour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomerrajuan/connect-four.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomerrajuan/connect-four/issues"
+  },
+  "homepage": "https://github.com/tomerrajuan/connect-four#readme"
+}
