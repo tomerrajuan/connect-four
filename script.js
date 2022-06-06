@@ -153,20 +153,22 @@
 
   function changeClasses() {
     if (currentPlayer == "player1") {
-      $(".menu1").addClass("on");
-      $(".menu2").addClass("on");
+      $(".player-one-box").addClass("on");
+      $(".player-two-box").addClass("on");
     } else if (currentPlayer == "player2") {
-      $(".menu1").removeClass("on");
-      $(".menu2").removeClass("on");
+      $(".player-one-box").removeClass("on");
+      $(".player-two-box").removeClass("on");
     }
   }
 
   function doVictoryDance() {
-    $(".victoryas").addClass("on");
-    $(".menu1").addClass("on");
+    $(".winningMessage").addClass("on");
+    $(".player-one-box").addClass("on");
+    $(".player-two-box").removeClass("on");
+    $(".player-one-box").addClass("off");
+    $(".player-two-box").addClass("off");
     $(".clock").addClass("on");
     $(".board").addClass("on");
-    $(".menu2").removeClass("on");
     if (currentPlayer == "player1") {
       $(".winningMessage").html("<h1>The winner is: Player1</h1>");
     } else if (currentPlayer == "player2") {

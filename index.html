@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="game-control">
-      <div class="clock"><p class="time-left">Time left:</p></div>
+    <header>
+      <div class="game-control">
+        <div class="clock"><p class="time-left">Time left:</p></div>
+      </div>
       <button class="restart-btn" type="button" name="button">
         Restart Game
       </button>
@@ -196,35 +198,36 @@
     </div>
 
     <div class="player1Turn">
-      <div class="menu1">
-        <h2 class="name1">
+      <div class="player-one-box">
+        <p class="player-one-box__name">
           P<br />
           l<br />
           a<br />
           y<br />
           e<br />
           r<br />
-        </h2>
-        <h1 class="num1">1</h1>
+        </p>
+        <p class="player-one-box__number">1</p>
       </div>
     </div>
 
     <div class="player2Turn">
-      <div class="menu2">
-        <h2 class="name2">
+      <div class="player-two-box">
+        <p class="player-two-box__name">
           P<br />
           l<br />
           a<br />
           y<br />
           e<br />
           r<br />
-        </h2>
-        <h1 class="num2">2</h1>
+        </p>
+        <p class="player-two-box__number">2</p>
       </div>
     </div>
 
-    <div class="victoryas"></div>
     <div class="winningMessage"></div>
+
+    <footer></footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
