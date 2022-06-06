@@ -2,11 +2,11 @@
   var currentPlayer;
   var foundEmptySlot;
   var button = $(".restart-btn");
-  var slots = $(".slot");
+  var slots = $(".board-column-slot");
 
   currentPlayer = "player2";
 
-  $(".column").on("click", function (e) {
+  $(".board-column").on("click", function (e) {
     timeRunningOut();
     switchPlayers();
     var col = $(e.currentTarget);
@@ -17,7 +17,7 @@
         !slotsInCol.eq(i).hasClass("player1") &&
         !slotsInCol.eq(i).hasClass("player2")
       ) {
-        // add currentPlayer to slot
+        // add currentPlayer to board-column-slot
         foundEmptySlot = true;
 
         slotsInCol.eq(i).addClass(currentPlayer);
@@ -60,7 +60,7 @@
       console.log(secs);
       secs--;
 
-      $(".column").on("click", function () {
+      $(".board-column").on("click", function () {
         clearInterval(id);
         secs = 7;
         return;

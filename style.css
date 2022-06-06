@@ -58,78 +58,59 @@ header {
     justify-content: center;
     z-index: 2000;
     bottom: 0; }
-
-.slot {
-  width: 100px;
-  height: 100px;
-  overflow: hidden; }
-  .slot__hole {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 40px solid #0600be;
-    box-sizing: content-box;
-    transform: translate(-30px, -30px); }
-
-.player1 {
-  background-color: yellow; }
-
-.player2 {
-  background-color: red; }
-
-.player-one-box__name,
-.player-two-box__name {
-  margin-left: 65%;
-  font-size: 35px;
-  color: #06610c; }
-
-.player-two-box__name {
-  margin-left: 20%; }
+  .board-column-slot {
+    width: 100px;
+    height: 100px;
+    overflow: hidden; }
+    .board-column-slot__hole {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 40px solid #0600be;
+      box-sizing: content-box;
+      transform: translate(-30px, -30px); }
 
 .player-one-box__number,
 .player-two-box__number {
-  position: absolute;
   color: #fff801;
-  margin-top: -130%;
-  margin-left: 10%;
   font-size: 150px; }
 
 .player-two-box__number {
-  color: red;
-  margin-left: 60%; }
+  color: red; }
 
 .player-one-box,
 .player-two-box {
-  z-index: 500;
   position: absolute;
-  background-color: beige;
+  z-index: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 250px;
-  height: 60%;
+  height: 400px;
   top: 30vh;
-  max-width: 300px;
-  padding-top: 20px;
-  overflow: hidden;
+  background-color: beige;
   border: 2px solid #06610c; }
+  .player-one-box__name,
+  .player-two-box__name {
+    font-size: 45px;
+    color: #06610c; }
+  .player-one-box.off,
+  .player-two-box.off {
+    display: none; }
 
 .player-one-box {
   right: 0; }
+  .player-one-box.on {
+    display: none; }
 
 .player-two-box {
   display: none;
   left: 0; }
-
-.player-one-box.on {
-  display: none; }
-
-.player-two-box.on {
-  display: block; }
+  .player-two-box.on {
+    display: flex; }
 
 .winningMessage.on {
   display: block; }
-
-.player-one-box.off,
-.player-two-box.off {
-  display: none; }
 
 .winningMessage {
   font-size: 30px;

@@ -11,6 +11,7 @@ body {
   justify-content: end;
   align-items: center;
 }
+
 header {
   width: 100vw;
   display: flex;
@@ -61,99 +62,80 @@ header {
   bottom: 0;
   border-right: 6px solid;
   border-left: 6px solid;
-
   &.on {
     display: flex;
     justify-content: center;
     z-index: 2000;
     bottom: 0;
   }
-}
 
-.slot {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  &__hole {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 40px solid rgb(6, 0, 190);
-    box-sizing: content-box;
-    transform: translate(-30px, -30px);
+  &-column-slot {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    &__hole {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 40px solid rgb(6, 0, 190);
+      box-sizing: content-box;
+      transform: translate(-30px, -30px);
+    }
   }
-}
-
-.player1 {
-  background-color: yellow;
-}
-.player2 {
-  background-color: red;
-}
-
-.player-one-box__name,
-.player-two-box__name {
-  margin-left: 65%;
-  font-size: 35px;
-  color: rgb(6, 97, 12);
-}
-
-.player-two-box__name {
-  margin-left: 20%;
 }
 
 .player-one-box__number,
 .player-two-box__number {
-  position: absolute;
   color: rgb(255, 248, 1);
-  margin-top: -130%;
-  margin-left: 10%;
   font-size: 150px;
 }
 
 .player-two-box__number {
   color: red;
-  margin-left: 60%;
 }
 
 .player-one-box,
 .player-two-box {
-  z-index: 500;
   position: absolute;
-  background-color: beige;
+  z-index: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 250px;
-  height: 60%;
+  height: 400px;
   top: 30vh;
-  max-width: 300px;
-  padding-top: 20px;
-  overflow: hidden;
+  background-color: beige;
   border: 2px solid rgb(6, 97, 12);
+
+  &__name {
+    font-size: 45px;
+    color: rgb(6, 97, 12);
+  }
+
+  &.off {
+    display: none;
+  }
 }
 
 .player-one-box {
   right: 0;
+
+  &.on {
+    display: none;
+  }
 }
 
 .player-two-box {
   display: none;
   left: 0;
-}
 
-.player-one-box.on {
-  display: none;
-}
-
-.player-two-box.on {
-  display: block;
+  &.on {
+    display: flex;
+  }
 }
 
 .winningMessage.on {
   display: block;
-}
-
-.player-one-box.off,
-.player-two-box.off {
-  display: none;
 }
 
 .winningMessage {
