@@ -42,7 +42,7 @@ header {
   padding: 20px;
   font-size: 28px;
   height: 100px;
-  background-color: beige;
+  background-color: #fed547;
   border-radius: 5px;
   z-index: 10000; }
 
@@ -88,7 +88,7 @@ header {
   width: 250px;
   height: 400px;
   top: 30vh;
-  background-color: beige;
+  background-color: #fed547;
   border: 2px solid #06610c; }
   .player-one-box__name,
   .player-two-box__name {
@@ -120,7 +120,7 @@ header {
   color: #6a0766;
   text-align: center;
   position: absolute;
-  background-color: beige;
+  background-color: #fed547;
   z-index: 10000;
   bottom: 300px;
   width: auto;

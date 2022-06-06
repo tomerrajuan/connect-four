@@ -170,9 +170,9 @@
     $(".clock").addClass("on");
     $(".board").addClass("on");
     if (currentPlayer == "player-one-coin") {
-      $(".winningMessage").html("<h1>The winner is: player-one-coin</h1>");
+      $(".winningMessage").html("<h1>The winner is: player 1</h1>");
     } else if (currentPlayer == "player-two-coin") {
-      $(".winningMessage").html("<h1>The winner is: player-two-coin</h1>");
+      $(".winningMessage").html("<h1>The winner is: player 2</h1>");
     }
   }
 
