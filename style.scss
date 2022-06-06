@@ -134,8 +134,12 @@ header {
   }
 }
 
-.winningMessage.on {
-  display: block;
+.player-one-coin {
+  background-color: yellow;
+}
+
+.player-two-coin {
+  background-color: red;
 }
 
 .winningMessage {
@@ -149,6 +153,10 @@ header {
   width: auto;
   padding: 15px;
   display: none;
+
+  &.on {
+    display: block;
+  }
 }
 
 footer {

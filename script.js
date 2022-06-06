@@ -4,7 +4,7 @@
   var button = $(".restart-btn");
   var slots = $(".board-column-slot");
 
-  currentPlayer = "player2";
+  currentPlayer = "player-two-coin";
 
   $(".board-column").on("click", function (e) {
     timeRunningOut();
@@ -14,8 +14,8 @@
 
     for (var i = 5; i >= 0; i--) {
       if (
-        !slotsInCol.eq(i).hasClass("player1") &&
-        !slotsInCol.eq(i).hasClass("player2")
+        !slotsInCol.eq(i).hasClass("player-one-coin") &&
+        !slotsInCol.eq(i).hasClass("player-two-coin")
       ) {
         // add currentPlayer to board-column-slot
         foundEmptySlot = true;
@@ -144,18 +144,18 @@
 
   function switchPlayers() {
     changeClasses();
-    if (currentPlayer == "player1") {
-      currentPlayer = "player2";
+    if (currentPlayer == "player-one-coin") {
+      currentPlayer = "player-two-coin";
     } else {
-      currentPlayer = "player1";
+      currentPlayer = "player-one-coin";
     }
   }
 
   function changeClasses() {
-    if (currentPlayer == "player1") {
+    if (currentPlayer == "player-one-coin") {
       $(".player-one-box").addClass("on");
       $(".player-two-box").addClass("on");
-    } else if (currentPlayer == "player2") {
+    } else if (currentPlayer == "player-two-coin") {
       $(".player-one-box").removeClass("on");
       $(".player-two-box").removeClass("on");
     }
@@ -169,10 +169,10 @@
     $(".player-two-box").addClass("off");
     $(".clock").addClass("on");
     $(".board").addClass("on");
-    if (currentPlayer == "player1") {
-      $(".winningMessage").html("<h1>The winner is: Player1</h1>");
-    } else if (currentPlayer == "player2") {
-      $(".winningMessage").html("<h1>The winner is: Player2</h1>");
+    if (currentPlayer == "player-one-coin") {
+      $(".winningMessage").html("<h1>The winner is: player-one-coin</h1>");
+    } else if (currentPlayer == "player-two-coin") {
+      $(".winningMessage").html("<h1>The winner is: player-two-coin</h1>");
     }
   }
 

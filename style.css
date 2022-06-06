@@ -109,8 +109,11 @@ header {
   .player-two-box.on {
     display: flex; }
 
-.winningMessage.on {
-  display: block; }
+.player-one-coin {
+  background-color: yellow; }
+
+.player-two-coin {
+  background-color: red; }
 
 .winningMessage {
   font-size: 30px;
@@ -123,6 +126,8 @@ header {
   width: auto;
   padding: 15px;
   display: none; }
+  .winningMessage.on {
+    display: block; }
 
 footer {
   background-color: #0600be;
